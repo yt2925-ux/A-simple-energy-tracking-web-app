@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Energy Manager • Activities</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="activities">
+<header>
+  <nav aria-label="Primary">
+    <a href="index.html">Overview</a>
+    <a href="log.html">Log</a>
+    <a href="activities.html" aria-current="page">Activities</a>
+  </nav>
+</header>
+<main>
+  <h1>Activities</h1>
+  <p class="small">Positive numbers restore energy (e.g., Sleep +40). Negative numbers consume energy (e.g., Study −15).</p>
+
+  <div class="card">
+    <form id="act-form" class="row">
+      <input id="act-name" placeholder="Activity name (e.g., Study / Workout / Sleep)" required>
+      <input id="act-delta" type="number" step="1" placeholder="Energy change (e.g., −15 or +40)" required>
+      <button type="submit">Add</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <table id="act-table">
+      <thead><tr><th>Name</th><th>Energy Change</th><th>Actions</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

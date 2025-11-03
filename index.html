@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Energy Manager • Overview</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+<header>
+  <nav aria-label="Primary">
+    <a href="index.html" aria-current="page">Overview</a>
+    <a href="log.html">Log</a>
+    <a href="activities.html">Activities</a>
+  </nav>
+</header>
+<main>
+  <h1>Energy Manager</h1>
+  <div class="card">
+    <div class="row">
+      <div>
+        <div class="small">Today</div>
+        <div class="mono" id="today">—</div>
+      </div>
+      <div>
+        <div class="small">Remaining Energy</div>
+        <span class="badge" id="remaining">—</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Recent Days</h2>
+  <ul id="recent"></ul>
+
+  <div class="card">
+    <p>Get started:</p>
+    <div class="row">
+      <a class="badge" href="log.html">Add today’s entries</a>
+      <a class="badge" href="activities.html">Set up activities</a>
+    </div>
+  </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

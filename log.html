@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Energy Manager • Log</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="log">
+<header>
+  <nav aria-label="Primary">
+    <a href="index.html">Overview</a>
+    <a href="log.html" aria-current="page">Log</a>
+    <a href="activities.html">Activities</a>
+  </nav>
+</header>
+<main>
+  <h1>Daily Log</h1>
+
+  <div class="card row">
+    <label>Date
+      <input id="date" type="date">
+    </label>
+    <label>Baseline energy
+      <input id="baseline" type="number" step="1" value="100">
+    </label>
+    <div>Remaining: <span class="badge" id="remain">—</span></div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <select id="act-select" style="min-width:220px"></select>
+      <input id="delta" type="number" step="1" placeholder="Custom energy change (optional)">
+      <input id="note" placeholder="Note (optional)">
+      <button id="add-entry">Add entry</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <table id="log-table">
+      <thead><tr><th>Time</th><th>Activity</th><th>Change</th><th>Note</th><th>Actions</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
