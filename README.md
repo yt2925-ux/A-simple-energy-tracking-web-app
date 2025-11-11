@@ -28,12 +28,6 @@ The project currently includes the following pages:
 The navigation system is consistent across all pages.  
 Users can switch between sections using the top navigation bar:
 
-```html
-<nav>
-  <a href="index.html">Overview</a>
-  <a href="log.html">Log</a>
-  <a href="activities.html">Activities</a>
-</nav>
 ## Week 9 Update
 
 ### Overview
@@ -55,3 +49,9 @@ Then, I used an array of objects in `app.js` to populate energy-saving suggestio
 - Add styling to the dynamically generated content.
 - Create and link mockups.
 - Refine the data and structure for better readability.
+```html
+<nav>
+  <a href="index.html">Overview</a>
+  <a href="log.html">Log</a>
+  <a href="activities.html">Activities</a>
+</nav>
